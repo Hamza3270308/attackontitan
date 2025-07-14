@@ -119,7 +119,7 @@ end
 -- Run the script after key verification
 local function runMainScript()
     -- Your original script logic here
-    local Games = loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/705e7fe7aa288f0fe86900cedb1119b1.lua"))()
+    local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/zerunquist/TekkitAotr/refs/heads/main/main"))()
     for PlaceID, Execute in pairs(Games) do
         if PlaceID == game.PlaceId then
             loadstring(game:HttpGet(Execute))()
